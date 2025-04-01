@@ -71,7 +71,7 @@ const ExtraCuAct = () => {
       title: "IEEE ISIMM Student Branch Member",
       bullets: [
         "Participated in IEEEXtreme 17.0 (7th place)",
-        "Participated in TSYP11 SMC challenge",
+        "Participated in TSYP11 SMC challenge (1st place)",
         "Participated in CS4ES (2nd place)",
         "Attended Flutter workshop",
         "Attended computer vision workshop"
@@ -105,7 +105,7 @@ const ExtraCuAct = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mr-5"
+        className="mr-10"
       >
         <ul className="timeline timeline-vertical">
           {activities.map((activity, index) => (
@@ -122,7 +122,7 @@ const ExtraCuAct = () => {
               <div className="timeline-middle">
                 <CheckIcon />
               </div>
-              <div className="timeline-end timeline-box text-left p-6 w-100">
+              <div className="timeline-end timeline-box text-left p-6 w-[150%]">
                 <h3 className="text-xl font-medium mb-3">{activity.title}</h3>
                 <ul className="list-disc text-base list-inside space-y-1">
                   {activity.bullets.map((bullet, i) => (

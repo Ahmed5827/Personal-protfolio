@@ -60,7 +60,7 @@ export const Navbar = () => {
               <li key={link.name}>
                 <Link
                   href={link.path}
-                  className={pathname === link.path ? 'text-gray-400' : 'text-secondary'}
+                  className={pathname === link.path ? 'text-gray-400' : 'text-white'}
                 >
                   {link.name}
                 </Link>
