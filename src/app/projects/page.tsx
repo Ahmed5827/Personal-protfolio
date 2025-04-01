@@ -96,14 +96,14 @@ const Projects = () => {
       <h1 className="text-5xl text-center mb-8 mx-10 font-bold text-gray-400">
         Projects
       </h1>
-      <div className="grid mb-11  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 md:gap-8 lg:gap-16">
+      <div className="grid mb-11 px-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 md:gap-8 lg:gap-16">
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="card ml-2 mr-2 glass w-96 h-[500px]"
+            className="card ml-2 mr-2 glass w-96 h-[500px] border border-gray-300 shadow-sm"
           >
             <figure>
               <Image
