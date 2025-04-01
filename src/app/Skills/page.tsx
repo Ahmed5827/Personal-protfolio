@@ -155,7 +155,8 @@ const Skills = () => {
         {/* Slide 1 - Programming Languages */}
         <div
           id="slide1"
-          className={`carousel-item relative w-full h-full mt-12 flex flex-col items-center justify-center ${activeSlide === 1 ? 'block' : 'hidden'}`}
+          className={`carousel-item relative w-full h-full flex flex-col items-center justify-center ${activeSlide === 1 ? 'block' : 'hidden'}`}
+          // Add this line
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl mb-2 md:mb-6 mx-2 md:mx-10 font-bold text-gray-400 mt-16 sm:mt-12 md:mt-8">
             Programming languages
@@ -168,7 +169,7 @@ const Skills = () => {
               initial="hidden"
               animate="visible"
               variants={cardVariants}
-              key={`${animationKey}-1-0`}
+              key={`${animationKey}-1`}
             >
               <Image
                 src="/erasebg-transformed.webp"
