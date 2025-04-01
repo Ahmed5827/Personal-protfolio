@@ -4,7 +4,8 @@
 
 @import "tailwindcss";
 @plugin "daisyui";
-/* In your CSS file */
+
+
 @font-face {
   font-family: 'Geist';
   src: url('/fonts/Geist.woff2') format('woff2');
