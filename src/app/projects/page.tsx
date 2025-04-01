@@ -8,7 +8,7 @@ const Projects = () => {
       title: "Tetris game",
       description:
         "A classic Tetris implementation built in Java, featuring a responsive desktop interface developed using Swing.",
-      image: "/tetris.png",
+      image: "/Tetris.png",
       tags: ["Java"],
       links: [
         {
