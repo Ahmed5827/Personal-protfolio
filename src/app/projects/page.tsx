@@ -6,7 +6,8 @@ const Projects = () => {
   const projects = [
     {
       title: "Tetris game",
-      description: "a desktop Tetris game using java",
+      description:
+        "A classic Tetris implementation built in Java, featuring a responsive desktop interface developed using Swing.",
       image: "/tetris.png",
       tags: ["Java"],
       links: [
@@ -19,7 +20,7 @@ const Projects = () => {
     {
       title: "Elite chess",
       description:
-        "a python software that automate video editing and content creation on instagram",
+        "A Python-based tool designed to streamline video editing and content creation for Instagram. ",
       image: "/header.png",
       tags: ["Python", "Instagram API", "Moviepy"],
       links: [
@@ -36,7 +37,7 @@ const Projects = () => {
     {
       title: "Recepie web App",
       description:
-        "a web app that showcases recepies from around the word built with react js",
+        "A dynamic React-based web app that showcases global recipes with search, filtering, and step-by-step guides, powered by a REST API for diverse culinary content.",
       image: "/Recepie.png",
       tags: ["Javascript", "React JS", "The Meal API"],
       links: [
@@ -52,7 +53,7 @@ const Projects = () => {
     },
     {
       title: "Quiz time",
-      description: "a web application that retrives quizez",
+      description: "A web application that retrieves and displays interactive quizzes with real-time scoring, built with React and powered by OpenTrivia API.",
       image: "/Quiz.png",
       tags: ["Javascript", "React JS", "OpenTrivia API", "Google Oauth2"],
       links: [
@@ -63,9 +64,9 @@ const Projects = () => {
       ],
     },
     {
-      title: "Image generation with CUDA",
+      title: "Desktop GPU-Accelerated Image Generation app",
       description:
-        "a desktop app that realise image generation locally using the power of CUDA enviroment for nvidia GPU",
+        "A desktop application using CUDA and NVIDIA GPU acceleration for high-performance local image generation.",
       image: "/Polar.png",
       tags: ["Python", "Huggingface API", "CUDA"],
       links: [
@@ -76,11 +77,11 @@ const Projects = () => {
       ],
     },
     {
-      title: "Object detection via live feed",
+      title: "Real-Time Object Detection via live feed",
       description:
-        "a python program that runs locally and relise object detection using YOLOV8 and shouting them outloud using text to speech",
+        "A Python app that detects objects in real-time via webcam using YOLOv8 and announces them aloud through text-to-speech for offline use.",
       image: "/Yolo.png",
-      tags: ["Python"],
+      tags: ["Python"," YOLOv8", "OpenCV", "gTTS"],
       links: [
         {
           label: "Source Code",
@@ -128,7 +129,12 @@ const Projects = () => {
               <p>{project.description}</p>
               <div className="card-actions justify-end">
                 {project.links.map((link) => (
-                  <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer">
+                  <a
+                    key={link.label}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button className="btn btn-primary">{link.label}</button>
                   </a>
                 ))}
