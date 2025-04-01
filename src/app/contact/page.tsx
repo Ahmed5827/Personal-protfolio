@@ -54,7 +54,7 @@ export default function ContactPage() {
 
       <form 
         onSubmit={handleSubmit(onSubmit)} 
-        className="bg-base-200 border border-base-300 p-6 rounded-lg shadow-lg w-100 max-w-md"
+        className="bg-base-200 border border-base-300 p-6 mx-2 rounded-lg shadow-lg w-100 max-w-md"
       >
         <h2 className="text-lg font-semibold mb-4 text-center">Get in Touch</h2>
 
