@@ -84,13 +84,13 @@ export const Navbar = () => {
   <div className='relative w-full h-full'>
     {/* Hamburger Icon */}
     <MenuIcon className={cn(
-      'absolute size-6 text-secondary transition-all duration-300',
+      'absolute size-6 text-white transition-all duration-300',
       isMenuOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'
     )} />
     
     {/* Close Icon */}
     <XIcon className={cn(
-      'absolute size-6 text-secondary transition-all duration-300',
+      'absolute size-6 text-white transition-all duration-300',
       isMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 -rotate-90'
     )} />
   </div>
@@ -111,7 +111,7 @@ export const Navbar = () => {
                   href={link.path}
                   className={cn(
                     'text-lg block',
-                    pathname === link.path ? 'text-gray-400' : 'text-secondary'
+                    pathname === link.path ? 'text-gray-400' : 'text-white'
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
