@@ -1,12 +1,14 @@
 /** @type {import('postcss-load-config').Config} */
 const config = {
-  theme: {
-    extend: {
-      screens: {
-        'xs': '480px', // Now you can use `xs:` prefix in classes
-      },
+'postcss-custom-media': {
+      importFrom: [
+        {
+          customMedia: {
+            '--max-sm': '(max-width: 639px)'
+          }
+        }
+      ]
     },
-  },
   plugins: {
     '@tailwindcss/postcss': {},
     autoprefixer: {},

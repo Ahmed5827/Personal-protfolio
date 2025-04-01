@@ -25,6 +25,7 @@
     "lucide-react": "^0.469.0",
     "motion": "^12.4.10",
     "next": "15.2.4",
+    "postcss-custom-media": "^11.0.5",
     "programming-languages-logos": "^0.0.3",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.8",

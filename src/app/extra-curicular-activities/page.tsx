@@ -95,9 +95,9 @@ const ExtraCuAct = () => {
   );
 
   return (
-    <div className="min-h-screen pt-30 py-15 px-4 sm:px-8">
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-400">
+    <div className="min-h-screen py-30  px-4 ">
+    <div className="max-w-5xl mx-auto">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-gray-400">
         Extra Curricular Activities
       </h1>
 
@@ -105,7 +105,8 @@ const ExtraCuAct = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="mr-10"
+        className="mr-45 sm:mr-50"
+       
       >
         <ul className="timeline timeline-vertical">
           {activities.map((activity, index) => (
@@ -113,18 +114,27 @@ const ExtraCuAct = () => {
               key={activity.id}
               variants={entryVariants}
               whileHover="hover"
-              className="flex justify-center mr-45"
+              className="flex flex-col sm:flex-row items-start sm:items-center justify-between"
             >
               {index !== 0 && <hr />}
-              <div className="timeline-start text-lg font-semibold">
+              <div className="timeline-start text-sm sm:text-base md:text-lg font-semibold mb-2 sm:mb-0 ">
                 {activity.date}
               </div>
               <div className="timeline-middle">
                 <CheckIcon />
               </div>
-              <div className="timeline-end timeline-box text-left p-6 w-[150%]">
+
+              <div className="timeline-end timeline-box text-left p-6 
+                w-fit min-w-[200px]  // Ensures it never gets smaller than 200px
+                sm:w-[170%] 
+                md:w-[150%] 
+                rounded-lg shadow-md 
+                text-xs 
+                sm:text-sm 
+                md:text-base 
+                font-semibold">
                 <h3 className="text-xl font-medium mb-3">{activity.title}</h3>
-                <ul className="list-disc text-base list-inside space-y-1">
+                <ul className="list-disc text-xs sm:text-sm md:text-base list-inside space-y-1">
                   {activity.bullets.map((bullet, i) => (
                     <li key={i}>{bullet}</li>
                   ))}
