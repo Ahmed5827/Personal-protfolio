@@ -45,7 +45,7 @@ export default function ContactPage() {
       };
 
   return (
-    <div className="h-screen mt-40 flex flex-col items-center">
+    <div className="h-screen mt-10 flex flex-col items-center">
       <Toaster />
       <h1 className="text-4xl font-bold mx-10 mb-12 text-center text-gray-400">
         Contact me
@@ -53,7 +53,7 @@ export default function ContactPage() {
 
       <form 
         onSubmit={handleSubmit(onSubmit)} 
-        className="bg-base-200 border border-base-300 p-6 rounded-lg shadow-lg w-96 max-w-md"
+        className="bg-base-200 border border-base-300 p-6 rounded-lg shadow-lg w-100 max-w-md"
       >
         <h2 className="text-lg font-semibold mb-4 text-center">Get in Touch</h2>
 
@@ -92,7 +92,7 @@ export default function ContactPage() {
             <span className="label-text">Message</span>
           </label>
           <textarea
-            className={`textarea h-32 ${errors.message ? 'textarea-error' : ''}`}
+            className={`textarea h-32 w-full ${errors.message ? 'textarea-error' : ''}`}
             placeholder="Feel free to speak your mind"
             {...register('message')}
           ></textarea>
