@@ -3,7 +3,21 @@
 
 
 @import "tailwindcss";
+@plugin "daisyui";
+/* In your CSS file */
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/Geist-Mono.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
 
 :root {
   --primary: rgb(29, 35, 42);
