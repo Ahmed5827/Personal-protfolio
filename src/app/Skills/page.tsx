@@ -158,13 +158,13 @@ const Skills = () => {
         {/* Slide 1 - Programming Languages */}
         <div
           id="slide1"
-          className={`carousel-item relative w-full h-full flex flex-col items-center justify-center ${activeSlide === 1 ? 'block' : 'hidden'}`}
+          className={`carousel-item relative w-full min-h-screen flex flex-col items-center pt-[20vh]  sm:pt-[15vh] md:pt-[15vh] ${activeSlide === 1 ? 'block' : 'hidden'}`}
           // Add this line
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl mb-2 md:mb-6 mx-2 md:mx-10 font-bold text-gray-400 mt-16 sm:mt-12 md:mt-8">
+          <h1 className="text-5xl text-center  mb-2 md:mb-6 mx-2 md:mx-10 font-bold text-gray-400 mt-16 ">
             Programming languages
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-2 mb-12 mt-4">
+          <div className="grid grid-cols-1 gap-y-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-2 mb-12 mt-4">
             <motion.div 
               className="card m-2" 
               style={{ width: "18rem", height: "18rem" }}
@@ -259,12 +259,12 @@ const Skills = () => {
         {/* Slide 2 - Front End Technologies */}
         <div
           id="slide2"
-          className={`carousel-item relative w-full h-full flex flex-col items-center justify-center ${activeSlide === 2 ? 'block' : 'hidden'}`}
+          className={`carousel-item relative w-full min-h-screen flex flex-col items-center pt-[20vh]  sm:pt-[15vh] md:pt-[15vh] ${activeSlide === 2 ? 'block' : 'hidden'}`}
         >
-          <h1 className="text-5xl mb-6 mx-10 font-bold text-gray-400">
+          <h1 className="text-5xl mb-6 mx-10 font-bold text-center text-gray-400">
             Front End Technologies
           </h1>
-          <div className="flex flex-row items-center justify-center space-x-5 flex-wrap space-y-16 sm:space-y-8 md:space-y-4">
+          <div className="flex flex-row items-center justify-center space-x-5 my-10 flex-wrap gap-y-20 sm:space-y-8 md:space-y-8">
             <motion.div 
               className="card m-2" 
               style={{ width: "18rem", height: "18rem" }}
@@ -345,9 +345,9 @@ const Skills = () => {
         {/* Slide 3 - Back-End Technologies */}
         <div
           id="slide3"
-          className={`carousel-item relative w-full h-full flex flex-col items-center justify-center ${activeSlide === 3 ? 'block' : 'hidden'}`}
+          className={`carousel-item relative w-full min-h-screen flex flex-col items-center pt-[20vh]  sm:pt-[25vh] md:pt-[25vh] ${activeSlide === 3 ? 'block' : 'hidden'}`}
         >
-          <h1 className="text-5xl mb-6 mx-10 font-bold text-gray-400">
+          <h1 className="text-5xl mb-6 mx-10 font-bold text-center text-gray-400">
             Back-End Technologies
           </h1>
           <div className="flex flex-row items-center justify-center space-x-5 flex-wrap space-y-16 sm:space-y-8 md:space-y-4">
@@ -425,12 +425,12 @@ const Skills = () => {
         {/* Slide 4 - Databases */}
         <div
           id="slide4"
-          className={`carousel-item relative w-full h-full flex flex-col items-center justify-center ${activeSlide === 4 ? 'block' : 'hidden'}`}
+          className={`carousel-item relative w-full min-h-screen flex flex-col items-center pt-[20vh]  sm:pt-[25vh] md:pt-[25vh]  ${activeSlide === 4 ? 'block' : 'hidden'}`}
         >
           <h1 className="text-5xl mb-6 mx-10 font-bold text-gray-400">
             Databases
           </h1>
-          <div className="flex flex-row items-center justify-center space-x-5 flex-wrap space-y-16 sm:space-y-8 md:space-y-4">
+          <div className="flex flex-row items-center gap-y-20 justify-center space-x-5 flex-wrap space-y-16 sm:space-y-8 md:space-y-4">
             <motion.div 
               className="card m-2" 
               style={{ width: "18rem", height: "18rem" }}
@@ -505,10 +505,10 @@ const Skills = () => {
         {/* Slide 5 - Tools */}
         <div
           id="slide5"
-          className={`carousel-item relative w-full h-full flex flex-col items-center justify-center ${activeSlide === 5 ? 'block' : 'hidden'}`}
+          className={`carousel-item relative w-full min-h-screen flex flex-col items-center pt-[20vh]  sm:pt-[25vh] md:pt-[25vh]   ${activeSlide === 5 ? 'block' : 'hidden'}`}
         >
           <h1 className="text-5xl mb-6 mx-10 font-bold text-gray-400">Tools</h1>
-          <div className="flex flex-row items-center justify-center space-x-5 flex-wrap space-y-16 sm:space-y-8 md:space-y-4">
+          <div className="flex flex-row gap-y-20 items-center justify-center space-x-5 flex-wrap space-y-16 sm:space-y-8 md:space-y-4">
             <motion.div 
               className="card m-2" 
               style={{ width: "18rem", height: "18rem" }}
