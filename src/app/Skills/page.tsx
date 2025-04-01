@@ -7,8 +7,8 @@ const Skills = () => {
   const [activeSlide, setActiveSlide] = useState(1);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
-  const carouselRef = useRef(null);
-  const wheelTimeout = useRef(null);
+  const carouselRef = useRef<HTMLDivElement | null>(null);
+  const wheelTimeout = useRef<NodeJS.Timeout | null>(null);
   const lastWheelTime = useRef(0);
   const [animationKey, setAnimationKey] = useState(0);
 
@@ -43,7 +43,7 @@ const Skills = () => {
     }
   };
 
-  const handleWheel = (e) => {
+  const handleWheel = (e: WheelEvent) => {
     e.preventDefault();
     const now = Date.now();
     if (now - lastWheelTime.current < 300) return;
@@ -77,6 +77,8 @@ const Skills = () => {
       carouselElement.addEventListener('wheel', handleWheel, { passive: false });
     }
 
+    const currentCarouselElement = carouselElement; // Copy ref value
+
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
@@ -99,18 +101,19 @@ const Skills = () => {
     if (carouselRef.current) observer.observe(carouselRef.current);
 
     return () => {
-      window.removeEventListener('hashchange', handleHashChange);
+      const carouselElementForCleanup = carouselRef.current;
+      if (currentCarouselElement) observer.unobserve(currentCarouselElement);
       if (carouselElement) carouselElement.removeEventListener('wheel', handleWheel);
-      if (carouselRef.current) observer.unobserve(carouselRef.current);
+      if (carouselElementForCleanup) observer.unobserve(carouselElementForCleanup);
       if (wheelTimeout.current) clearTimeout(wheelTimeout.current);
     };
   }, [activeSlide]);
 
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
   };
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: React.TouchEvent) => {
     touchEndX.current = e.touches[0].clientX;
   };
 
