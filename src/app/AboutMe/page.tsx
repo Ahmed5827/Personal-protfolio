@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const AboutMe = () => {
   return (
-    <div className="w-full">
+    <div className="w-full pt-20">
       <div className="flex flex-col md:flex-row justify-center items-center min-h-screen w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
         {/* Text Content - Centered and properly spaced */}
         <motion.div 
