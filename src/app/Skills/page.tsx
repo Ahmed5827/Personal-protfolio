@@ -358,7 +358,7 @@ const Skills = () => {
               key={`${animationKey}-3-0`}
             >
               <Image
-                src="/expressjslogo.png"
+                src="/icons8-express-js-800.png"
                 width={1000}
                 height={1000}
                 className="w-72 h-72 object-contain"
@@ -378,7 +378,7 @@ const Skills = () => {
               key={`${animationKey}-3-1`}
             >
               <Image
-                src="/Flask.png"
+                src="/icons8-flask-800.png"
                 width={1000}
                 height={1000}
                 className="w-72 h-72 object-contain"
@@ -398,7 +398,7 @@ const Skills = () => {
               key={`${animationKey}-3-2`}
             >
               <Image
-                src="/Django-Logo.png"
+                src="/icons8-django-800.png"
                 width={1000}
                 height={1000}
                 className="w-72 h-72 object-contain"
@@ -536,7 +536,7 @@ const Skills = () => {
               key={`${animationKey}-5-1`}
             >
               <Image
-                src="/docker.svg"
+                src="/icons8-docker-800.png"
                 width={1000}
                 height={1000}
                 className="w-72 h-72 object-contain"

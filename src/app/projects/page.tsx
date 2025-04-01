@@ -91,7 +91,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen mb-1 mt-15 flex flex-col items-center">
+    <div className="min-h-screen mb-1 pt-30 flex flex-col items-center">
       <h1 className="text-5xl text-center mb-8 mx-10 font-bold text-gray-400">
         Projects
       </h1>

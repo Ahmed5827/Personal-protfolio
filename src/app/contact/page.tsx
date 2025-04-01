@@ -43,9 +43,10 @@ export default function ContactPage() {
           console.error('Submission error:', error);
         }
       };
-
+//min-h-screen pt-30 py-15 px-4 sm:px-8
+//min-h-screen mt-10 pt-30 flex flex-col items-center
   return (
-    <div className="h-screen mt-10 flex flex-col items-center">
+    <div className="min-h-screen pt-30 py-15 flex flex-col items-center">
       <Toaster />
       <h1 className="text-4xl font-bold mx-10 mb-12 text-center text-gray-400">
         Contact me

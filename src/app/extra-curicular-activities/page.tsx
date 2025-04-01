@@ -95,7 +95,7 @@ const ExtraCuAct = () => {
   );
 
   return (
-    <div className="min-h-screen py-15 px-4 sm:px-8">
+    <div className="min-h-screen pt-30 py-15 px-4 sm:px-8">
     <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-400">
         Extra Curricular Activities
