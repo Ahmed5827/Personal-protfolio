@@ -103,7 +103,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="card ml-2 mr-2 glass w-96 h-[500px] border border-gray-300 shadow-sm"
+            className="card glass w-full max-w-96 border border-gray-300 shadow-sm"
           >
             <figure>
               <Image
