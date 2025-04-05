@@ -49,7 +49,7 @@ export default function RootLayout({
       >
         
         <Navbar />
-        <main className=" min-h-screen">{children}</main>
+        <main data-theme="dark" className=" min-h-screen">{children}</main>
         <Analytics />
         <SpeedInsights />
       </body>
